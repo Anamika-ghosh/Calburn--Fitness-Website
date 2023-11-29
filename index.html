@@ -1,4 +1,219 @@
-  <section id="contact" class="contact view">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>CalBurn-Fitness website</title>
+</head>
+<body>
+    <!------------------------------------NAVIGATION BAR------------------------------------->
+    <div class="navbar">
+        <a href="#" class="logo">CB</a>
+        <ol>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#workout">Workout</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ol>
+    </div>
+    <!---------------------------------Home Section------------------------------------->
+    <section class="home view" id="home">
+        <div class="highlights">
+            <h3>Elevate Your Fitness Journey with</h3>
+            <h1>CalBurn</h1>
+            <p class="tagline">Empower Your Body, Ignite Your Spirit-Welcome to Your Fitness Revolution</p>
+            <button class="join">Get Started</button>
+        </div>
+        <div class="banner"></div>
+
+    </section>
+    <!-------------------------------------About Section-------------------------------------->
+    <section id="about" class="about view">
+        <div class="main">
+            <h2><span>A</span>bout Us</h2>
+            <h6> Ignite Your Fitness Revolution</h6>
+        </div>
+            <div class="content">
+            <div class="col"></div>
+            <p id="about">At CalBurn, we believe that fitness is not just a goal; it's a way of life. Our mission is to empower you on your journey to a healthier, stronger, and more vibrant you. Whether you're a seasoned fitness enthusiast or just starting, our comprehensive range of workouts, expert advice, and community support are here to propel you towards success.
+                 Discover a personalized fitness experience like never before. Our curated workouts cater to your goals, ensuring every drop of sweat takes you closer to your fitness zenith.
+                 CalBurn,where we redefine the way you approach wellness. Our website is not just a platform; it's a revolution in the making, transforming every workout into a victory.
+                 Harness cutting-edge fitness tools that track your progress with precision. Set ambitious goals, monitor achievements, and witness your transformation unfold in real-time.
+            </p>
+
+            </div>
+        </div>
+      <div class="main">
+      <div class="col"></div>
+        <h2>User Friendly</h2>
+      <p id="about">A place where you can find all your solution daily workout planner expert trainnings and guidance &support.</p> </div></div>
+    </section>
+    <!------------------------------------------ Workout Section---------------------------------------------->
+    <section id="workout" class="workout view">
+        <div class="main">
+            <h2><span>W</span>orkout</h2>
+            <h6>Revitalize your fitness with a diverse Workout section</h6>
+        </div>
+        <div class="content">
+            <div class="frame">
+                <div class="box">
+                <img src="https://st3.depositphotos.com/12982378/17970/i/380/depositphotos_179706468-stock-photo-caucasian-man-woman-training-gym.jpg" alt="a boy">
+                </div>
+         </div>
+         <div class="workouts">
+            <p class="work">START YOUR DAY-WITH US<hr></p><br>
+            <h2>Planner</h2>
+
+            
+            <!-------------------------------------------workout planner ---------------------------------------------------->
+            <div class="container">
+                <h1>Workout Planner</h1>
+                <div id="workout-list">
+          
+                </div>
+                <div>
+                    <label  id="today"for="workout-name">Workout Name:</label>
+                    <input type="text" id="workout-name" placeholder="Enter workout name">
+                    <label for="workout-time" id="today">Duration (min):</label>
+                    <input type="number" id="workout-time" placeholder="Enter duration">
+                    <button id="add" onclick="addWorkout()">Add Workout</button>
+                </div>
+            </div>
+           <!---------------------------------------------------workout list------------------>
+      <h2>KNOW MORE & PLAN YOUR DAY</h2><hr>
+           <div class="workout-info">
+           <!-- Workout information boxes -->
+           <div class="workout-box">
+                 <h3 class="name">HIIT (High-Intensity Interval Training)</h3>
+                 <p>HIIT involves short bursts of intense exercise followed by periods of rest. It's effective for burning calories and improving cardiovascular fitness.</p>
+             </div>
+
+             <div class="workout-box">
+                 <h3 class="name">Pilates</h3>
+                 <p>Pilates focuses on core strength, flexibility, and overall body awareness. It includes exercises like the plank, leg circles, and the hundred.</p>
+             </div>
+
+             <div class="workout-box">
+                 <h3 class="name">Circuit Training</h3>
+                 <p>Circuit training combines strength and aerobic exercises in a sequence. It's a versatile workout that targets different muscle groups.</p>
+             </div>
+
+             <div class="workout-box">
+                 <h3 class="name">Swimming</h3>
+                 <p>Swimming is a full-body workout that improves cardiovascular fitness and builds muscle strength. It's a low-impact exercise suitable for all ages.</p>
+             </div>
+
+             <div class="workout-box">
+                 <h3 class="name">Zumba</h3>
+                 <p>Zumba is a dance-based workout that combines Latin and international music with dance moves. It's a fun way to improve cardiovascular fitness.</p>
+             </div>
+
+             <div class="workout-box">
+                 <h3 class="name">Bodyweight Exercises</h3>
+                 <p>Bodyweight exercises use your own body for resistance. Examples include squats, lunges, and push-ups. They are effective for strength training.</p>
+             </div>
+             <div class="workout-box">
+               <h3 class="name">Cardio Workout</h3>
+               <p>Cardio exercises help improve cardiovascular health and burn calories. Examples include running, cycling, and jumping jacks.</p>
+           </div>
+
+           <div class="workout-box">
+               <h3 class="name">Yoga</h3>
+               <p>Yoga improves flexibility, balance, and mental well-being. Poses like downward dog and warrior pose are popular in yoga workouts.</p>
+           </div>
+             <div class="workout-box">
+             <h3 class="name">Strength Training</h3>
+                 <p>Strength training builds muscle and increases metabolism. Common exercises include weight lifting, push-ups, and squats.</p>
+             </div>
+           </div>
+
+<!---------------------------------- Trainers Section------------------------------------------------>
+<section id="trainers" class="trainers view">
+    <div class="main">
+   <h2>
+    <span>B</span>est <span>T</span>rainers
+    <h6>start your fitness journey with best peoples guidance</h6>
+    </h2>
+
+        <div class="content">
+        <div class="frame">
+            <div class="box">
+            <img src="https://media.istockphoto.com/id/837346044/photo/fitness-in-the-park.jpg?s=612x612&w=0&k=20&c=FF16tk88-goGVNPEBaX7RKn5o9xcqpw-Vzwj6i88hcY=" alt="girl">
+
+        </div>
+            <div class="headline">
+                <div class="title">Katthey: Aerobic Instructor<br></div>
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+            </div>
+            </div>
+            <div class="content">
+            <div class="frame">
+                <div class="box">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGJvZHlidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="boy"></div>
+                <div class="headline">
+                    <div class="title">Peter:Muscular Workout Instructor</div>
+                    <div class="icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                </div>
+                </div>
+                <div class="content">
+                <div class="frame">
+                    <div class="box">
+                        <img src="https://media.istockphoto.com/id/1158540068/photo/asian-women-resting-after-play-yoga-and-exercise-at-home-background-with-copy-space-exercise.jpg?s=612x612&w=0&k=20&c=Dgul5KqrGEvSw9QmtKvIZb0sdH1XuFDsKI2J9ln9kzc="alt="girl">
+                        <div class="headline">
+                        <div class="title">Jerry : Yoga Instructor</div>
+                        <div class="icons">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+ </div>
+    </div>
+    <div class="content">
+                <div class="frame">
+                    <div class="box">
+                    <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJvZHlidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="boy"></div>
+                    <div class="headline">
+                        <div class="title">John:Cardio Instructor</div>
+                        <div class="icons">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                    
+ </div>
+    </div>
+      <!--  --------- ------------------------ trainer  -------------------------------boooking       -->
+      <div class="booking-container">
+        <h2>Trainer Booking</h2>
+        <form id="bookingForm">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" required>
+      
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" required>
+      
+          <label for="trainerName">Trainer's Name:</label>
+          <input type="text" id="trainerName" required>
+      
+          <button type="button" id="bookButton">Book Trainer</button>
+        </form>
+      </div>
+
+<section id="contact" class="contact view">
         <div class="main">
        <h2>
         <span>C</span>ontact <span>U</span>s<br>
