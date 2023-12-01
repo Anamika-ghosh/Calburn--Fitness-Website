@@ -1,1 +1,444 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing:border-box;
+    outline:none;
+    color:white;
+    scroll-behavior: smooth;
+  }
+  :root{
+    --prime:rgb(247, 95, 35);
+  }
+  
+  body{
+    background-color:rgb(27, 27, 27);
+  /*    ---------------------------NAVBAR , logo & list functions-----------------*/
+  }
+  .navbar{
+    width:100%;
+    display: flex;
+    position: fixed;
+    padding: 30px 120px;
+    background-color: rgb(34, 32, 32);
+    justify-content: space-between;
+    z-index:1111;
+    transition: 0.5s ease;
+  }
+  .navbar .sticky{
+    padding:7px 60px;
+    background: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  .logo{
+    font-size: 2.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration:none;
+  
+  }
+  ol{
+    display: flex;
+    margin:auto 0;
+  
+  }
+  ol li{
+    list-style:none;
+    margin-right: 20px;
+  
+    }
+  ol li a{
+    font-size:20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  ol li:hover a{
+    color:var(--prime);
+  
+  }
+  /*-----------------------------Common size for all section-------------------------------------------*/
+  .view{
+    width:100%;
+    min-height: 80vh;
+    position: relative;
+  
+  }
+  /*------------------------------home section---------------------------------------------*/
+  .home{
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0,100% 0,100% 100%,80% 95%,0 100%);
+  
+  
+  }
+  .banner{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    background:url(https://st2.depositphotos.com/2810065/9910/i/380/depositphotos_99106828-stock-photo-bodybuilder-working-out-with-bumbbells.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(30%);
+  
+  }
+  .highlights{
+    width:80%;
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+  
+  }
+  .highlights h3{
+    display: inline;
+    font-size: 2vw;
+    padding: 5px 20px;
+    font-weight: medium;
+    text-transform: capitalize;
+    border-left: 8px solid var(--prime);}
+  .highlights h1{
+    font-size: 10vh;
+    text-align: center;
+    font-weight: 900;
+    color:var(--prime)
+  
+  }
+  .highlights .tagline{
+    color:aliceblue;
+    font-size:20px;
+    text-align: center;
+    font-weight: 500;
+  
+  }
+  .highlights .join{
+    position:absolute;
+    left: 50%;
+    font-size: 20px;
+    margin-top: 2px;
+    color: aliceblue;
+    border:2px solid aliceblue;
+    border-radius: 25px;
+    background: transparent;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+  }
+  .highlights .join:hover{
+    color:rgb(247, 109, 30);
+    cursor: pointer;
+    background: white;
+  }
+  /*------------------------------all section---------------------------------------------------*/
+  .main{
+    width:100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .main h2{
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    display: inline-block;
+  }
+  span{
+    color:var(--prime);
+  
+  }
+  .main h2:before{
+    position:absolute;
+    content: '';
+    background: var(--prime);
+    height: 4px;
+    width: 25%;
+    right:-15px;
+    bottom:0;
+    border-radius: 50px;
+  }
+  .main h6{
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+  }
+  .content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 25px;
+    justify-content: center;
+  }
+  /*------------------------------------------about design-----------------------------------*/
+  .about .content .col{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+  }
+  .about .content .col p{
+    font-size: 20px;
+    margin-right: 2px;
+  
+  }
+  .about .content .col a{
+    position: relative;
+    top:20px;
+    color:white;
+    background:var(--prime);
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding:5px 20px;
+    text-decoration: none;
+    }
+  .about .content .col a:hover{
+    color:white;
+    background: white;
+  }
+  .about .content .col .box{
+    position: relative;
+    height: 560px;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+  }
+  #about{
+    color:white;
+  }
+  /*------------------------------workout content------------------------------------*/
+  .workout .content{
+    flex-wrap: wrap;
+  }
+  .workout .content .frame{
+    position: relative;
+    width: 360px;
+    padding:20px;
+    margin:10px;
+    background: rgb(59, 58, 58);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+  
+  }
+  .workout .content .frame .box{
+    position: relative;
+    height: 200px;
+    width:100%;
+    overflow: hidden;
+  }
+  .workout .content .frame .box .img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: 0.3s ease-in;
+  }
+  .work{
+        color:white;
+        font-size:30px;
+        text-align: center;
+      }
+  
+    
+      /* Workout Planner section */
+      #workout-name{
+        color:black;}
+      #workout-time{
+        color:black;
+      }
+      label{
+        color:black;
+      }
+      #add{
+        background-color: var(--prime);
+        color:white;
+        padding:10px 20px;
+      }
+      #today{
+        color:black;
 
+      }
+      .workout-item{
+        border:1px solid white;
+        padding:10px;
+        margin-bottom: 10px;
+        border-radius:5px;
+        display:flex;
+        justify-content: space-between;
+      }
+      .workout-item button{
+        background-color: var(--prime);
+        color:white;
+        border:none;
+        padding:5px 10px;
+        border-radius:4px;
+        cursor:pointer;
+      }
+  /*                                       --- workout list---          */
+  h2{
+    text-align:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    ;
+  }
+  .workout-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      color:black;
+  }
+  
+  .workout-box {
+    
+      width: calc(33.33% - 20px);
+      background-color:#ede8e8;;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow:0 10px 15px rgba(0,6,1,0.9) ;
+  }
+  .name{
+    color:black;
+  }
+  p{
+    color:black;
+  }
+  /*--------------------------------------------------trainers content--------------------------------------------*/
+  .trainers .content{
+  flex-wrap:wrap;
+  }
+  .trainers .content .frame{
+    position: relative;
+    width:500px;
+    padding: 30px 30px 40px 30px ;
+    box-shadow:0 10px 15px rgba(0,0,0,0.5);
+    margin: 10px;
+    background: #222;
+  }
+  .trainers .content .frame .box{
+  display:flex;
+   position: relative;
+   height: 300px;
+   width: 100%;
+   overflow: hidden;
+  }
+  .trainers .content .frame .box img{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+  
+    object-fit: cover;
+    transition: 0.3s ease-in;
+  
+  }
+  
+  .trainers .content .frame .headline{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    margin: 8px 0;
+  }
+  .trainers .content .frame .headline i{
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 5px;
+    cursor: pointer;
+    line-height: 25px;
+  }
+  .trainers .content .frame .headline .title{
+    color:var(--prime);
+    font-size: 12px;
+  }
+  /*                 trainer booking     */
+  
+  .booking-container {
+    text-align: center;
+  }
+  
+  #bookingForm {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color:white;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  
+  #bookButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--prime);
+    color:white;
+  }
+  
+  /*----------------------------------contact section ----------------------------------*/
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container {
+    text-align: center;
+  }
+  
+  #contactForm {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    color:black;
+  }
+  
+  #submitButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--prime);
+    color:white;
+  }
+  .copyright{
+    text-transform: capitalize;
+    height: 50px;
+    width: 100%;
+    background: #222;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+  }
+  /*--------------------------------------------responsive--------------------------------*/
+  @media screen and (max-width:900px){
+    .navbar{
+        padding:0 60px;
+    }
+    .navbar ol{
+        display: none;
+    }
+  
+    }
+  
+  
